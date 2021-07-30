@@ -150,6 +150,10 @@ ex) `docker create -i -t centos:7`
 
 `docker rm [컨테이너 이름]` : 컨테이너 삭제
 
+`docker rmi [이미지 이름]` : 도커 이미지 삭제
+
+`docker rm 'docker ps -a -q'` : 컨테이너 전체 삭제
+
 `docker run -i -t --name [MY_WEB_SERVER_IP] -p [호스트 포트]:[컨테이너의 포트] [이미지이름]:[태그]` : 컨테이너 외부에 노출
 
 ex) `docker run -i -t -p 3306:3306 -name 192.168.0.100:7777:80 ubuntu:14.04`
